@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {%- set css -%}{%- include "styles.css" -%}{% endset -%}
     <style>{{ css | cssmin | safe }}</style>
-    <title>{%- if title -%}{{ title }}{%- else -%}An example site. Deployed to Netlify{%- endif -%}</title>
-    <meta name="description" content="{%- if description -%}{{ description }}{%- else -%}A simple site. Deployed to Netlify as an demonstration.{%- endif -%}"/>
+    <title>{%- if title -%}{{ title }}{%- else -%}fabry.dev{%- endif -%}</title>
+    <meta name="description" content="{%- if description -%}{{ description }}{%- else -%}Personal website of software engineer.{%- endif -%}"/>
   </head>
   <body>
     <header>
       <div class="container">
-        <a href="/" class="home" title="Home"><img src="/images/netlify-logomark.svg" class="logomark" alt="Netlify"></a>
+        <a href="/" class="home" title="Home"><img src="/images/netlify-logomark.svg" class="logomark" alt="Logo"></a>
         {% block header %}
           {# Replace this if anything is passed in to the header block #}
           {% if header %}
@@ -21,13 +21,13 @@
           </p>
           {% else %}
           <h1>
-            🎉 {% if details.twitter %}{{ details.twitter }}{% else %}I{% endif %} deployed this to netlify
+            💠 Ondrej Fabry
           </h1>
           <p>
-            And so could you
+            software engineer
           </p>
           <p>
-            <a href="/#get-yours" class="btn btn-white">Find out how</a>
+            <a href="https://www.linkedin.com/in/ofabry" class="btn btn-white">LinkedIn</a>
           </p>
           {% endif %}
         {% endblock %}
