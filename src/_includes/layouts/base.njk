@@ -13,7 +13,7 @@
   <body>
     <header>
       <div class="container">
-        <a href="/" class="home" title="Home"><img src="/images/netlify-logomark.svg" class="logomark" alt="Logo"></a>
+        <a href="/" class="home" title="Home"><img src="https://gravatar.com/avatar/33c0b767fd936a9437e09cf6fc801cca" alt="Gravatar"></a>
         {% block header %}
           {# Replace this if anything is passed in to the header block #}
           {% if header %}
@@ -24,10 +24,11 @@
           {% else %}
           <h1>Ondrej Fabry</h1>
           <code style="color:#bbb;margin-top:10px;">
-            software engineer from Slovakia
+            enthusiastic software engineer from Slovakia
           </code>
           <p>
-            <a href="https://www.linkedin.com/in/ofabry" class="btn btn-white"><i class="fas fa-linkedin fa-fw"></i> LinkedIn</a>
+            <a href="https://linkedin.com/in/ofabry" class="btn btn-white"><i class="fab fa-linkedin"></i> LinkedIn</a> 
+            <a href="https://github.com/ofabry" class="btn btn-white"><i class="fab fa-github-square"></i> GitHub</a>
           </p>
           {% endif %}
         {% endblock %}
