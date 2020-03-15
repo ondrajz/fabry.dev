@@ -7,6 +7,8 @@
     <style>{{ css | cssmin | safe }}</style>
     <title>{%- if title -%}{{ title }}{%- else -%}fabry.dev{%- endif -%}</title>
     <meta name="description" content="{%- if description -%}{{ description }}{%- else -%}Personal website of software engineer.{%- endif -%}"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css">
   </head>
   <body>
     <header>
@@ -20,14 +22,12 @@
             {{ header.subtitle }}
           </p>
           {% else %}
-          <h1>
-            💠 Ondrej Fabry
-          </h1>
+          <h1>Ondrej Fabry</h1>
+          <code style="color:#bbb;margin-top:10px;">
+            software engineer from Slovakia
+          </code>
           <p>
-            software engineer
-          </p>
-          <p>
-            <a href="https://www.linkedin.com/in/ofabry" class="btn btn-white">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/ofabry" class="btn btn-white"><i class="fas fa-linkedin fa-fw"></i> LinkedIn</a>
           </p>
           {% endif %}
         {% endblock %}
