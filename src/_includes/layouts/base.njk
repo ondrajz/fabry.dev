@@ -6,14 +6,17 @@
     {%- set css -%}{%- include "styles.css" -%}{% endset -%}
     <style>{{ css | cssmin | safe }}</style>
     <title>{%- if title -%}{{ title }}{%- else -%}fabry.dev{%- endif -%}</title>
-    <meta name="description" content="{%- if description -%}{{ description }}{%- else -%}Personal website of software engineer.{%- endif -%}"/>
+    <meta name="description" content="{%- if description -%}{{ description }}{%- else -%}Personal website for software engineer from Slovakia.{%- endif -%}"/>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css">
   </head>
   <body>
     <header>
       <div class="container">
-        <a href="/" class="home" title="Home"><img src="https://en.gravatar.com/userimage/129858368/b19c73aa876bf220dcc4b8a03b95f67b.png?size=200" alt="Gravatar"></a>
+        <a href="/" class="home" title="Home">
+        <img src="https://en.gravatar.com/userimage/129858368/1905f05f52abf7934f90bc3e8dab66d5.png?size=150" alt="Gravatar">
+        <p style="color:black;">fabry.dev</p>
+        </a>
         {% block header %}
           {# Replace this if anything is passed in to the header block #}
           {% if header %}
@@ -22,14 +25,7 @@
             {{ header.subtitle }}
           </p>
           {% else %}
-          <h1>Ondrej Fabry</h1>
-          <code style="color:#bbb;margin-top:10px;font-size:14px;">
-            enthusiastic software engineer from Slovakia
-          </code>
-          <p>
-            <a href="https://linkedin.com/in/ofabry" class="btn btn-white"><i class="fab fa-linkedin"></i> LinkedIn</a> 
-            <a href="https://github.com/ofabry" class="btn btn-white"><i class="fab fa-github-square"></i> GitHub</a>
-          </p>
+          Personal webiste for software engineer from Slovakia.
           {% endif %}
         {% endblock %}
       </div>
